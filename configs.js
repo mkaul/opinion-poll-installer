@@ -30,7 +30,7 @@ ccm.files[ 'configs.js' ] = {
         id: "histogram_categories_absolute",
         type: "histogram_categories",
         title: "Histogramm Kategorien absolut",
-        mapping: arg => arg.c
+        mapping: arg => arg.count
       }
     ],
 
@@ -67,6 +67,7 @@ ccm.files[ 'configs.js' ] = {
             id: 'result',
             inner: [
               { tag: 'h1', inner: 'Vielen Dank für Ihre Teilnahme.' },
+              { id: 'poll_result' },
               { tag: 'button', id: 'start_paper', inner: 'Weiter zum Artikel über die bisherigen Ergebnisse der Umfrage', onclick: '%start_paper%' },
             ]
           },
