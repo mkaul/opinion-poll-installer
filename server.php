@@ -64,7 +64,7 @@
 
       // security: locate directory of log files outside of WWW folders
       // $dir = "../../logs/";
-      $dir = "../logs/";
+      $dir = "./logs/";
 
       // unique filename with time stamp and unique ID
       $filename = $dir . time() . '_' . uniqid() . ".json";
@@ -80,7 +80,7 @@
       // use the same folder as in the log script
       // security: locate directory of log files outside of WWW folders
       // $dir = "../../logs/";
-      $dir = "../logs/";
+      $dir = "./logs/";
 
       // collect all files in the directory "$dir" except '.', '..'
       $files = array_diff( scandir($dir), array('.', '..') );
